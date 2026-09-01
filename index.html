@@ -1,3 +1,5 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>Ncantation Consulting</title>
 <style>
   :root{
@@ -53,7 +55,7 @@
 
   .scene{ position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
     transition: opacity .9s ease, transform .9s ease; will-change:opacity, transform;
-    overflow-y:auto;
+    overflow-y:auto; padding-bottom:90px;
   }
   .scene[hidden]{ display:none; }
   .scene.leaving{ opacity:0; transform:scale(1.5); pointer-events:none; }
@@ -309,6 +311,7 @@
     .door-wrap{ width:56vw; }
     .choice-row{ flex-direction:column; }
     footer.legal{ font-size:9.5px; padding:8px 14px 10px; }
+    .scene{ padding-bottom:150px; }
   }
 
   @media (prefers-reduced-motion: reduce){
